@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PodCast Music Nerd</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <style>
+       body{
+        background-color: #FBDA61;
+        background-image: linear-gradient(45deg, #FBDA61 0%, #5d575d 100%);
+        background-repeat: no-repeat;
+       }
+
+    </style>
+</head>
+<body>
+    
+     <div class="container">
+         
+        <!--botões-->
+         <button id="btnMusicOne">Tocar Música 1</button>
+         <button onclick="pararMusica1()">parar música 1</button><br><br>
+         <button id="btnMusicTwo">Tocar Música 2</button>
+         <button onclick="pararMusica2()">parar música 2</button><br><br>
+         <button id="btnMusicTree">Tocar Música 3</button>
+         <button onclick="pararMusica3()">parar música 3</button>
+
+        <!--Audios-->
+         <audio src="music/podmusic1.mp4" id="musica1" ></audio>
+         <audio src="music/podmusic2.mp4" id="musica2"></audio>
+         <audio src="music/podmusic3.mp4" id="musica3"></audio>
+             
+
+ 
+        </div>
+     <script src="js/tocadordemusica.js"></script>
+</body>
+</html>
